@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* 1. Lock in our colors so we never type hex codes again */
+@theme {
+  --color-brand-orange: #fa7436;
+  --color-heading-dark: #222222;
+  --color-body-grey: #666666;
+  --color-bg-offwhite: #f7f8fc;
+}
+
+/* 2. Create a clean utility class just for our heading font */
+@utility font-volkhov {
+  font-family: var(--font-volkhov), serif;
+}
+
+/* 3. Make Poppins the default font for the entire app */
+@layer base {
+  body {
+    background-color: white;
+    color: var(--color-body-grey);
+    font-family: var(--font-poppins), sans-serif;
+  }
+}
