@@ -72,7 +72,6 @@ export default function DealsAndDiscounts() {
                             duration={deal.duration}
                             originalPrice={deal.originalPrice}
                             discountPrice={deal.discountPrice}
-                            overlayText={deal.overlayText}
                         />
                     ))}
                 </div>
